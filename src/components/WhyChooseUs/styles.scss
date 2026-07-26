@@ -1,0 +1,182 @@
+.why-section {
+  padding: 0.6rem 0 2.2rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: minmax(360px, 0.82fr) minmax(0, 1.18fr);
+    gap: 2.25rem;
+    align-items: center;
+    padding-inline: clamp(3rem, 6.1vw, 6.5rem);
+  }
+
+  &__photo-wrap {
+    position: relative;
+    overflow: visible;
+
+    img {
+      width: 100%;
+      min-height: 310px;
+      border-radius: 34px;
+      object-fit: cover;
+    }
+  }
+
+  &__heart {
+    position: absolute;
+    z-index: 2;
+    top: -1.4rem;
+    left: -2.8rem;
+    color: #ff9ca3;
+    font-size: 7rem;
+    line-height: 1;
+    transform: rotate(-25deg);
+  }
+
+  &__content {
+    h2 {
+      margin: 0 0 1.5rem;
+      color: white;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.4rem 2rem;
+  }
+
+  &__accordion {
+    display: none;
+  }
+}
+
+.reason-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: start;
+
+  &__icon {
+    display: grid;
+    flex: 0 0 auto;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    color: #2c2928;
+    font-size: 1.2rem;
+    font-weight: 700;
+    place-items: center;
+
+    &--pink {
+      background: #ff9ca3;
+    }
+
+    &--green {
+      background: #b7f58f;
+    }
+  }
+
+  h3 {
+    margin: 0.1rem 0 0.5rem;
+    color: white;
+    font-size: 0.92rem;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0;
+    color: #bec1bf;
+    font-size: 0.72rem;
+    line-height: 1.55;
+  }
+}
+
+@media (max-width: 1024px) {
+  .why-section {
+    &__container {
+      grid-template-columns: 1fr;
+      padding-inline: 2rem;
+    }
+
+    &__photo-wrap {
+      display: none;
+    }
+
+    &__content {
+      h2 {
+        text-align: center;
+        font-size: 1.35rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .why-section {
+    padding: 0 0.75rem 1.2rem;
+
+    &__container {
+      padding: 0;
+    }
+
+    &__content h2 {
+      margin-bottom: 0.7rem;
+      font-size: 0.95rem;
+    }
+
+    &__grid {
+      display: none;
+    }
+
+    &__accordion {
+      display: grid;
+      gap: 0.35rem;
+
+      details {
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: 7px;
+        background: #1d2321;
+
+        p {
+          margin: 0;
+          padding: 0 0.8rem 0.75rem 2.8rem;
+          color: #bfc2c0;
+          font-size: 0.56rem;
+          line-height: 1.45;
+        }
+      }
+
+      summary {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 0.6rem;
+        align-items: center;
+        padding: 0.42rem 0.65rem;
+        color: white;
+        list-style: none;
+        cursor: pointer;
+
+        &::-webkit-details-marker {
+          display: none;
+        }
+
+        strong {
+          font-size: 0.57rem;
+        }
+      }
+
+      .reason-card__icon {
+        width: 25px;
+        height: 25px;
+        font-size: 0.65rem;
+      }
+    }
+
+    &__chevron {
+      font-size: 1.1rem;
+    }
+  }
+}

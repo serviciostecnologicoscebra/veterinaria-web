@@ -1,0 +1,39 @@
+{
+  "name": "love-puppies-website",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "author": {
+    "name": "ST CEBRA"
+  },
+  "contributors": [
+    {
+      "name": "William Valladares",
+      "email": "pweb5002@gmail.com",
+      "url": "https://github.com/pweb5002-creator"
+    },
+    {
+      "name": "Imanol Mena",
+      "email": "husdadymena@gmail.com",
+      "url": "https://github.com/Husdady"
+    }
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "5.3.8",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react-swc": "3.7.2",
+    "million": "3.1.11",
+    "sass": "1.97.3",
+    "vite": "5.4.19",
+    "vite-plugin-singlefile": "2.3.0",
+    "vite-plugin-svgr": "4.5.0"
+  }
+}
