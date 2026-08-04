@@ -128,7 +128,9 @@
     }
 
     &__copy {
-      max-width: 570px;
+      place-items: center;
+      text-align: center;
+      max-width: 100%;
       padding-bottom: 0;
     }
 
@@ -148,13 +150,21 @@
 
     &__mascotas {
       right: 29%;
-      width: 270px;
+      width: 605px;
     }
 
     &__heart {
       top: 23%;
       left: 5%;
       font-size: 6rem;
+    }
+    &__spark {
+      top: 20%;
+      right: 47%;
+    &--two {
+       top: 25%;
+       right: 45%;
+      }
     }
   }
 }
