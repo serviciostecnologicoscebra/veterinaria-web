@@ -1,4 +1,4 @@
-import veterinarianImage from "./veterinarian.png";
+import veterinariaImage from "./mascotadoctor.png";
 
 const reasons = [
   {
@@ -33,7 +33,7 @@ export default function WhyChooseUs() {
       <div className="container-fluid why-section__container">
         <div className="why-section__photo-wrap">
           <span className="why-section__heart">♡</span>
-          <img src={veterinarianImage} alt="Veterinario atendiendo a un perro" />
+          <img src={veterinariaImage} alt="Veterinario atendiendo a un perro" />
         </div>
 
         <div className="why-section__content">
@@ -41,7 +41,11 @@ export default function WhyChooseUs() {
           <div className="why-section__grid">
             {reasons.map((reason) => (
               <article className="reason-card" key={reason.title}>
-                <span className={`reason-card__icon reason-card__icon--${reason.tone}`}>{reason.icon}</span>
+                <span
+                  className={`reason-card__icon reason-card__icon--${reason.tone}`}
+                >
+                  {reason.icon}
+                </span>
                 <div>
                   <h3>{reason.title}</h3>
                   <p>{reason.text}</p>
@@ -54,7 +58,11 @@ export default function WhyChooseUs() {
             {reasons.map((reason) => (
               <details key={reason.title}>
                 <summary>
-                  <span className={`reason-card__icon reason-card__icon--${reason.tone}`}>{reason.icon}</span>
+                  <span
+                    className={`reason-card__icon reason-card__icon--${reason.tone}`}
+                  >
+                    {reason.icon}
+                  </span>
                   <strong>{reason.title}</strong>
                   <span className="why-section__chevron">›</span>
                 </summary>

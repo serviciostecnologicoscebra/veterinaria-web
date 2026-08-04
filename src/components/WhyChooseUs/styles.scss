@@ -3,18 +3,20 @@
 
   &__container {
     display: grid;
-    grid-template-columns: minmax(360px, 0.82fr) minmax(0, 1.18fr);
+    grid-template-columns: minmax(360px, 0.2fr) minmax(0, 1.18fr);
     gap: 2.25rem;
     align-items: center;
     padding-inline: clamp(3rem, 6.1vw, 6.5rem);
   }
 
   &__photo-wrap {
+    display: flex;
+    justify-content: center;
     position: relative;
     overflow: visible;
 
     img {
-      width: 100%;
+      width: 60%;
       min-height: 310px;
       border-radius: 34px;
       object-fit: cover;
