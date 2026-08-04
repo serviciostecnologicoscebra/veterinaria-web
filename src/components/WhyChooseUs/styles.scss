@@ -100,11 +100,7 @@
     &__container {
       grid-template-columns: 1fr;
       padding-inline: 2rem;
-    }
-
-    &__photo-wrap {
-      display: none;
-    }
+    }  
 
     &__content {
       h2 {
@@ -121,6 +117,21 @@
 
     &__container {
       padding: 0;
+    }
+    &__photo-wrap {
+         
+      img {
+        width: 25%;
+        min-height: 100px;
+        border-radius: 34px;
+        object-fit: cover;
+      }
+    }
+    &__heart{
+        position: absolute;
+        top: 0.6rem;
+        left: 5.2rem;
+        font-size: 2rem;
     }
 
     &__content h2 {

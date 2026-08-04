@@ -89,8 +89,11 @@
 
 @media (max-width: 500px) {
   .welcome-card {
-    top: 380px;
-    width: calc(100vw - 2rem);
+    position: absolute;
+    left: 50%;
+    top: 365px;
+    transform: translateX(-50%);
+    width: calc(95vw - 2rem);
     max-width: 340px;
     padding: 1.4rem 1.25rem 0.9rem;
 

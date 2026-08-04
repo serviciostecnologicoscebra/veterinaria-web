@@ -92,7 +92,7 @@
     display: block;
     margin-top: 0.25rem;
     color: #c8c4c1;
-    font-size: 0.48rem;
+    font-size: 0.7rem;
     letter-spacing: 0.03em;
   }
 }
@@ -151,7 +151,7 @@
 @media (max-width: 500px) {
   .lp-header {
     &__inner {
-      min-height: 100px;
+      min-height: 100%;
       padding: 0.7rem 1rem;
     }
 
@@ -160,20 +160,14 @@
       right: 0.75rem;
       left: 0.75rem;
     }
-
-    &__cta {
-      position: absolute;
-      right: 50%;
-      bottom: 0.55rem;
-      min-height: 32px;
-      margin: 0;
-      padding: 0.45rem 1rem;
-      font-size: 0.56rem;
-      transform: translateX(50%);
+    .lp-button--primary{
+      display: none;
     }
 
     &__menu {
       width: 26px;
+      position: absolute;
+      left: 88%;
     }
   }
 
@@ -189,7 +183,10 @@
     }
 
     small {
-      font-size: 0.38rem;
+      font-size: 0.55rem;
+      line-height: 0.5rem;
     }
   }
+  
+  
 }

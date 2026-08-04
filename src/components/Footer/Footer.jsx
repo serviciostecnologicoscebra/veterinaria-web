@@ -5,15 +5,29 @@ const footerGroups = [
   },
   {
     title: "Servicios",
-    items: ["Consulta General", "Vacunación", "Odontología", "Cirugías", "Hospitalización"],
+    items: [
+      "Consulta General",
+      "Vacunación",
+      "Odontología",
+      "Cirugías",
+      "Hospitalización",
+    ],
   },
   {
     title: "Contacto",
-    items: ["Av. Siempre Viva 123, Pet City", "(01) 123 4567", "hola@lovepuppies.com"],
+    items: [
+      "Av. Siempre Viva 123, Pet City",
+      "(01) 123 4567",
+      "hola@lovepuppies.com",
+    ],
   },
   {
     title: "Horario de atención",
-    items: ["Lun - Vie: 9:00 am - 7:00 pm", "Sábados: 9:00 am - 2:00 pm", "Domingos: Cerrado"],
+    items: [
+      "Lun - Vie: 9:00 am - 7:00 pm",
+      "Sábados: 9:00 am - 2:00 pm",
+      "Domingos: Cerrado",
+    ],
   },
 ];
 
@@ -25,7 +39,9 @@ export default function Footer() {
           <a className="lp-brand" href="#inicio">
             <span className="lp-brand__paw">🐾</span>
             <span>
-              <strong>Love<span>Puppies</span></strong>
+              <strong>
+                Love<span>Puppies</span>
+              </strong>
               <small>Clínica Veterinaria</small>
             </span>
           </a>
@@ -41,18 +57,27 @@ export default function Footer() {
         <div className="lp-footer__mobile-groups">
           {footerGroups.map((group) => (
             <details key={group.title}>
-              <summary>{group.title}<span>+</span></summary>
+              <summary>
+                {group.title}
+                <span>+</span>
+              </summary>
               <ul>
-                {group.items.map((item) => <li key={item}>{item}</li>)}
+                {group.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
               </ul>
             </details>
           ))}
         </div>
 
-        <div className="lp-footer__mobile-socials"><Socials /></div>
+        <div className="lp-footer__mobile-socials">
+          <Socials />
+        </div>
       </div>
       <div className="lp-footer__copyright">
-        <span>© 2024 LovePuppies Clínica Veterinaria. Todos los derechos reservados.</span>
+        <span>
+          © 2026 LovePuppies Clínica Veterinaria. Todos los derechos reservados.
+        </span>
         <span className="lp-footer__paw">🐾</span>
       </div>
     </footer>
@@ -61,10 +86,14 @@ export default function Footer() {
 
 function FooterGroup({ group }) {
   return (
-    <div className={`lp-footer__group ${group.title === "Horario de atención" ? "lp-footer__group--outlined" : ""}`}>
+    <div
+      className={`lp-footer__group ${group.title === "Horario de atención" ? "lp-footer__group--outlined" : ""}`}
+    >
       <h3>{group.title}</h3>
       <ul>
-        {group.items.map((item) => <li key={item}>{item}</li>)}
+        {group.items.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
       </ul>
     </div>
   );
@@ -73,10 +102,18 @@ function FooterGroup({ group }) {
 function Socials() {
   return (
     <div className="lp-socials" aria-label="Redes sociales">
-      <a href="#contacto" aria-label="Facebook">f</a>
-      <a href="#contacto" aria-label="Instagram">◎</a>
-      <a href="#contacto" aria-label="WhatsApp">◉</a>
-      <a href="#contacto" aria-label="TikTok">♪</a>
+      <a href="#contacto" aria-label="Facebook">
+        f
+      </a>
+      <a href="#contacto" aria-label="Instagram">
+        ◎
+      </a>
+      <a href="#contacto" aria-label="WhatsApp">
+        ◉
+      </a>
+      <a href="#contacto" aria-label="TikTok">
+        ♪
+      </a>
     </div>
   );
 }

@@ -215,6 +215,7 @@
     }
 
     &__visual {
+      text-align: center;
       min-height: 230px;
       margin-top: 0;
     }
@@ -222,23 +223,23 @@
     &__mascotas {
       right: 30%;
       bottom: -3%;
-      width: 155px;
+      width: 288px;
     }
 
     &__heart {
-      top: 21%;
-      left: 4%;
+      top: 0%;
+      left: 8%;
       font-size: 3.6rem;
     }
 
     &__spark {
-      top: 20%;
-      right: 6%;
+      top: 13%;
+      right: 15%;
       height: 17px;
 
       &--two {
         top: 27%;
-        right: 1%;
+        right: 13%;
         height: 11px;
       }
     }
