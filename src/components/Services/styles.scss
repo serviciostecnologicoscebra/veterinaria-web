@@ -118,6 +118,9 @@
     &__container {
       padding-inline: 0.75rem;
     }
+    .section-subtitle{
+      font-size: 0.7rem;
+    }
 
     &__grid {
       gap: 0.45rem;
@@ -139,7 +142,7 @@
     }
 
     h3 {
-      font-size: 0.48rem;
+      font-size: 0.7rem;
       line-height: 1.15;
     }
   }

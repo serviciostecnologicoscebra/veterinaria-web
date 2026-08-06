@@ -178,7 +178,9 @@
       span:first-child {
         grid-column: 1;
         max-width: 230px;
+        font-size: 0.59rem;
       }
+     
     }
 
     &__paw {
@@ -192,9 +194,9 @@
     gap: 1.15rem;
 
     a {
-      width: 28px;
-      height: 28px;
-      font-size: 0.75rem;
+      width: 35px;
+      height: 35px;
+      font-size: 0.9rem;
     }
   }
 }
